@@ -1,0 +1,89 @@
+body{
+    background-color: #e93b81;
+}
+
+
+
+.jumbotron{
+    background-color:#ffe5e2 ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("images/travis-grossen--CaJIE1MiA4-unsplash.jpg");
+}
+.navbar{
+    background-color:#e93b81;
+    text-decoration: none;
+    color:whitesmoke;
+}
+.btn-default{
+    background-color: #f5abc9;
+    color:#e93b81
+}
+.btn-default:hover{
+    background-color: #ffe5e2;
+    color:green;
+}
+.empty-container{
+    height:400px;
+}
+
+.button{
+    width:10%;
+    height:50px;
+    border-radius: 25px;
+    background-color: #f5abc9;
+    color:#ffe5e2;
+    font-family: 'Dancing Script', cursive;
+    font-size:20px;
+    border-style: none;
+    box-shadow: gray;
+}
+h1{
+    color:#ffe5e2;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Limelight', cursive;
+}
+img{
+    height: 90px;
+}
+.text-600{
+    color:#f5abc9;
+}
+
+.bg-img{
+    background-image: url("images/travis-grossen--CaJIE1MiA4-unsplash.jpg");
+    background-size: cover;
+}
+a{
+    color:#ce2378;   
+}
+a:hover{
+    color:#f5abc9;
+    text-decoration: none;
+}
+.button:hover{
+    background-color:#e93b81;
+}
+.bg-footer{
+    background-color: #e93b81;
+}
+.btn-primary{
+    border-style: none;
+}
+.hove li a:hover{
+    color:#e93b81;
+
+}
+@media(min-width:320px) and (max-width:570px){
+    .jumbotron{
+        background-image: url("images/neonbrand-n2VvngfbXtU-unsplash.jpg");
+    }
+    .button{
+        width:30%;
+    }
+    .nav-brand img{
+        width:300px;
+        float:left;
+    }
+}
+
