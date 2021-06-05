@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="assests/index.css">
+	<script>
+function validateForm() {
+         var x = document.forms.myForm.fname.value;
+         var y = document.forms.myForm.pname.value;
+         if (x == ""&&y!="") {
+            alert("Username must be filled out");
+          return false;
+        }
+        if(y==""&&x!=""){
+	        alert("Please enter the password");
+
+          return false;
+        }
+		if(x==""&&y==""){
+			alert("Please enter your Username and Password");
+			return false;
+		}
+}
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+		<div class="width"><a class="nav-brand mt-50" href="index.html"><img src="assests/images/Copy of Fun with Love.gif" /></a></div>
+		<div class="collapse navbar-collapse mr-auto" id="Navbar">
+			<ul class="navbar-nav ml-auto " >
+				<li class="nav-item "><a role="button" class="nav-link btn " href="#">Home</a></li>
+				<li class="nav-item "><a role="button" class="nav-link btn" href="#">About</a></li>
+				<li class="nav-item "><a role="button" class="nav-link btn" href="#">Products</a></li>
+			</ul>
+			</div>
+			<!--a role="button" class="nav-link btn-default collapse-sm" href="#">Log In &nbsp;&nbsp;&nbsp;<span class="fa fa-arrow-circle-right"></span></a>-->
+	</div>
+	</nav>
+	<div class="jumbotron">
+		<div class="empty-container1">
+		</div>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fa fa-facebook-square"></i></span>
+					<span><i class="fa fa-google-plus-square"></i></span>
+					<span><i class="fa fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form name="myForm" >
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input name="fname" type="text" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input name="pname" type="password" class="form-control" placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<input type="submit" onclick="validateForm()" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="#">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+</div>
+
+<footer class="bg-footer text-white">
+	<!-- Grid container -->
+	<div class="container p-4">
+	  <!--Grid row-->
+	  <div class="row">
+		<!--Grid column-->
+		<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+		  <h5 class="text-uppercase">Love on the go</h5>
+
+		  <p>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Iste atque ea 
+			quis molestias.
+		  </p>
+		</div>
+		<!--Grid column-->
+
+		<!--Grid column-->
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase">Categories</h5>
+
+		  <ul class="list-unstyled mb-0">
+			<li>
+			  <a href="#!" class="text-white">Home</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-white">About Us</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-white">Products</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-white">Developers</a>
+			</li>
+		  </ul>
+		</div>
+		<!--Grid column-->
+
+		<!--Grid column-->
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase">Legal</h5>
+
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="#!" class="text-white">Privacy</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-white">Terms</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-white">Cookies Policy</a>
+			</li>
+		  </ul>
+		</div>
+		<!--Grid column-->
+	  </div>
+	  <!--Grid row-->
+	</div>
+	<!-- Grid container -->
+	<section class="mb-4 text-center">
+	  <!-- Facebook -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #3b5998;"
+		href="#!"
+		role="button"
+		><i class="fa fa-facebook"></i></a>
+
+	  <!-- Twitter -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #55acee;"
+		href="#!"
+		role="button"
+		><i class="fa fa-twitter"></i></a>
+
+	  <!-- Google -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #dd4b39;"
+		href="#!"
+		role="button"
+		><i class="fa fa-google"></i
+	  ></a>
+
+	  <!-- Instagram -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #ac2bac;"
+		href="#!"
+		role="button"
+		><i class="fa fa-instagram"></i
+	  ></a>
+
+	  <!-- Linkedin -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #0082ca;"
+		href="#!"
+		role="button"
+		><i class="fa fa-linkedin"></i
+	  ></a>
+	  <!-- Github -->
+	  <a
+		class="btn btn-primary btn-floating m-1"
+		style="background-color: #333333;"
+		href="#!"
+		role="button"
+		><i class="fa fa-github"></i
+	  ></a>
+	</section>
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	  © 2020 Copyright:
+	  <a class="text-white" href="index.html">LoveOnTheGo.com</a>
+	</div>
+	<!-- Copyright -->
+  </footer>
+</body>
+</html>
