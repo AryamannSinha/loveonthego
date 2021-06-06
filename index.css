@@ -28,6 +28,10 @@ body{
 .empty-container1{
     height:150px;
 }
+.empty-container2{
+    height:100px;
+}
+
 .button{
     width:10%;
     height:50px;
@@ -154,6 +158,62 @@ input:focus{
 .links a{
     margin-left: 4px;
     }
+    .bg-form{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #e93b81;
+    }
+    
+    .profile-button {
+        background: #e93b81;
+        box-shadow: none;
+        border: none
+    }
+    
+    .profile-button:hover {
+        background: #f5abc9;
+        color:#e93b81;
+    }
+    
+    .profile-button:focus {
+        background: #e93b81;
+        box-shadow: none
+    }
+    
+    .profile-button:active {
+        background: #e93b81;
+        box-shadow: none
+    }
+    
+    .back:hover {
+        color: #e93b81;
+        cursor: pointer
+    }
+    
+    .labels {
+        font-size: 15px;
+        color: #ffe5e2;
+    }
+    .profileimage{
+        height:40vh;
+        width:200px;
+    }
+    .profile_button{
+        background-color: #e93b81;
+        color:#ffe5e2;
+        width:200px;
+        border:none;
+        border-radius: 15px;
+    }
+    .profile_button:hover{
+        background-color: #f5abc9;
+        color: #e93b81;
+    }
+    .header-label{
+        color:#e93b81;
+    }
 @media(min-width:320px) and (max-width:570px){
     .jumbotron{
         background-image: url("images/neonbrand-n2VvngfbXtU-unsplash.jpg");
@@ -166,4 +226,5 @@ input:focus{
         float:left;
     }
 }
+
 
